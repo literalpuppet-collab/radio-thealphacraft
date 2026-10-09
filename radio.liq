@@ -8,7 +8,7 @@ shout_port = string.to_int(environment.get(default="8000", "SHOUTCAST_PORT"))
 shout_pass = environment.get(default="thealphadio32", "SHOUTCAST_PASSWORD")
 
 # 1. Carrega a playlist
-playlist_musicas = playlist(music_dir, mode="randomize")
+playlist_musicas = playlist(music_dir, mode="normal")
 
 # 2. Formata e insere o metadado que o Shoutcast/Bot lê
 def formatar_metadados(m) =
